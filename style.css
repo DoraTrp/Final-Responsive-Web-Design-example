@@ -5,44 +5,39 @@ html,body {
 
 
 /*-----Small Mobile-----*/
-.container-1{
-	display:flex;
-}
+
 
 .menu{
-	margin:auto;
 	background-color: #5A9498;
 	min-width: 350px;
 	min-height: 60px;
-	flex:1;
+	display: flex;
+
 }
 
-.container-2{
+.burger{
 	display:flex;
+}
+
+.svg-burg{
+	padding-left: 10px;
+	margin:auto;
 }
 
 .big-image{
 	min-width: 350px;
 	min-height: 250px;
-	flex:1;
 	background-color:#eee;
 }
 
 
-.container-3{
-	display: flex;
-	flex-direction: column;
-}
 
 .box{
 	text-align: center;
-	flex:1;
-	margin:auto;
 	padding:15px 12px 15px 12px;
 }
 
 .container-4{
-	flex:1;
 	background-color:#5A9498;
 	flex-direction: column;
 	padding:15px 35px 35px 35px;
@@ -50,7 +45,6 @@ html,body {
 
 
 .big-text{
-	margin: auto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 26px;
@@ -78,22 +72,20 @@ html,body {
 }
 
 
-/*_______ */
+
 .heel-container{
 	display: none;
 }
 
-/*___________*/
+
 
 .devices{
 	min-width: 350px;
 	min-height: 250px;
-	flex:1;
 	background-color:#eee;
 }
 
 .big-text-2{
-	margin: auto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 26px;
@@ -105,8 +97,6 @@ html,body {
 }
 
 .container-6{
-	flex:1;
-	flex-direction: column;
 	padding:15px 35px 35px 35px;
 }
 
@@ -121,7 +111,6 @@ html,body {
 
 	.box{
 	text-align: center;
-	flex:1;
 	margin:auto;
 	padding:30px 15px 30px 15px;
 	}
@@ -150,12 +139,11 @@ html,body {
 @media(min-width:700px){
 
 	.container-3{
-		display: grid;
 		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-areas: 
 		'one three five'
-		'two four six'; 
+		'two four six';
 	}
 
 	#one{
@@ -184,7 +172,6 @@ html,body {
 
 
 
-	/* _________ */
 	.container-4{
 	padding: 0px 0px 0px 0px;
 	display: grid;
@@ -223,7 +210,6 @@ html,body {
 	}
 }
 
-	/*____________*/
 
 /*-----Desktop-----*/
 @media(min-width:900px){
